@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="kooora.a3almal3ab.MatchesActivity"
+    android:id="@+id/tab_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Ad-View -->
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/top_ad_vw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4659966632628158/9482023992"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/date_butt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/today"
+                android:background="@drawable/rounded_butt_background"
+                android:textColor="#FFF"/>
+
+            <Button
+                android:id="@+id/add_match_butt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/add_match"
+                android:visibility="gone"
+                android:textColor="#FFF"
+                android:background="@drawable/rounded_butt_background" />
+
+        </LinearLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEE">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/matches_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/matches_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@null"
+                    android:dividerHeight="0px"
+                    app:layout_constraintBottom_toTopOf="@id/bottom_ad_vw"/>
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/bottom_ad_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteY="567dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-4659966632628158/4968063913"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+<!--            <android.support.constraint.ConstraintLayout
+                android:id="@+id/live_stream_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIVE STREAM TAB" />
+
+            </android.support.constraint.ConstraintLayout> -->
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/competitions_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/name_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:textColor="#000"
+                    android:textColorHint="#777"
+                    android:maxLines="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/phone_number_edit_text"
+                    android:minWidth="200dp"
+                    android:textAlignment="textStart" />
+
+                <EditText
+                    android:id="@+id/phone_number_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_no"
+                    android:inputType="phone"
+                    android:textColor="#000"
+                    android:textColorHint="#777"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/subscribe_butt"
+                    app:layout_constraintTop_toBottomOf="@id/name_edit_text"
+                    android:minWidth="200dp"
+                    android:textAlignment="textStart"/>
+
+                <Button
+                    android:id="@+id/subscribe_butt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscribe"
+                    android:background="@drawable/rounded_butt_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/phone_number_edit_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/name_phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/subscribe_butt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!--        <android.support.constraint.ConstraintLayout
+                        android:id="@+id/pitch_booking_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PITCH BOOKING TAB" />
+
+                    </android.support.constraint.ConstraintLayout>
+        -->
+        </FrameLayout>
+
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:padding="8dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/team_a_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Team A"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@+id/team_a_logo"
+            app:layout_constraintEnd_toStartOf="@+id/team_a_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/team_a_logo"
+            app:layout_constraintHorizontal_bias="0" />
+
+        <TextView
+            android:id="@+id/team_b_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Team B"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@+id/team_b_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/team_b_logo"
+            app:layout_constraintTop_toTopOf="@id/team_b_logo"
+            app:layout_constraintHorizontal_bias="1" />
+
+        <TextView
+            android:id="@+id/match_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/starting_at"
+            android:textColor="#000"
+            app:layout_constraintBottom_toTopOf="@+id/score_time_or_result"
+            app:layout_constraintEnd_toEndOf="@id/score_time_or_result"
+            app:layout_constraintStart_toStartOf="@id/score_time_or_result" />
+
+        <TextView
+            android:id="@+id/score_time_or_result"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="0:0"
+            android:textColor="#000"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/time_zone"/>
+
+        <TextView
+            android:id="@+id/time_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="@string/cairo_timezone"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@id/score_time_or_result"
+            app:layout_constraintStart_toStartOf="@id/score_time_or_result"
+            app:layout_constraintTop_toBottomOf="@id/score_time_or_result"/>
+
+        <ImageView
+            android:id="@+id/team_b_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/score_time_or_result"
+            app:layout_constraintTop_toTopOf="@+id/score_time_or_result"
+            app:layout_constraintStart_toEndOf="@+id/time_zone"
+            app:srcCompat="@mipmap/default_team_logo" />
+
+        <ImageView
+            android:id="@+id/team_a_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/score_time_or_result"
+            app:layout_constraintEnd_toStartOf="@+id/time_zone"
+            app:layout_constraintTop_toTopOf="@+id/score_time_or_result"
+            app:srcCompat="@mipmap/default_team_logo" />
+
+        <TextView
+            android:id="@+id/live_stream_butt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/live_streama"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:background="@drawable/rounded_butt_background"
+            app:layout_constraintTop_toBottomOf="@id/time_zone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/backup_live_stream_butt" />
+
+        <TextView
+            android:id="@+id/backup_live_stream_butt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/backup_live_streama"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_butt_background"
+            app:layout_constraintTop_toBottomOf="@id/time_zone"
+            app:layout_constraintEnd_toStartOf="@id/live_stream_butt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/competition_info_txt_vw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:layout_margin="8dp"
+            android:textDirection="rtl"
+            android:gravity="center"
+            android:text="competition info"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@id/backup_live_stream_butt"
+            app:layout_constraintStart_toStartOf="@id/backup_live_stream_butt"
+            app:layout_constraintEnd_toEndOf="@id/backup_live_stream_butt" />
+
+
+        <ImageView
+            android:id="@+id/competition_info_img_vw"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/received_10212668698649289"
+            app:layout_constraintEnd_toEndOf="@id/live_stream_butt"
+            app:layout_constraintStart_toStartOf="@id/live_stream_butt"
+            app:layout_constraintTop_toBottomOf="@id/live_stream_butt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
+

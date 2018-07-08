@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">عالملعب</string>
+
+    <string-array name="teams">
+        <item>اختر فريق</item>
+        <item>السنغال</item>
+        <item>المغرب</item>
+        <item>تونس</item>
+        <item>مصر</item>
+        <item>نيجيريا</item>
+        <item>أستراليا</item>
+        <item>إيران</item>
+        <item>السعودية</item>
+        <item>اليابان</item>
+        <item>كوريا الجنوبية</item>
+        <item>أسبانيا</item>
+        <item>أيسلندا</item>
+        <item>البرتغال</item>
+        <item>الدنمارك</item>
+        <item>السويد</item>
+        <item>الصرب</item>
+        <item>المانيا</item>
+        <item>انجلترا</item>
+        <item>بلجيكا</item>
+        <item>بولندا</item>
+        <item>روسيا</item>
+        <item>سويسرا</item>
+        <item>فرنسا</item>
+        <item>كرواتيا</item>
+        <item>المكسيك</item>
+        <item>بنما</item>
+        <item>كوستاريكا</item>
+        <item>أوروجواي</item>
+        <item>الأرجنتين</item>
+        <item>البرازيل</item>
+        <item>بيرو</item>
+        <item>كولومبيا</item>
+    </string-array>
+
+    <string name="name">الاسم</string>
+    <string name="subscribe">اشترك</string>
+    <string name="cancel_subscription">الغاء الاشتراك</string>
+    <string name="phone_no">رقم التيفون</string>
+    <string name="you_didnt_fill_all_fields">تاكد من ادخال الاسم و رقم التليفون</string>
+    <string name="you_subscribed_successfully">لقد اشتركت بنجاح</string>
+    <string name="youve_unsubscribed_successfully">لقد الغيت الاشتراك بنجاح</string>
+    <string name="matches">المباريات</string>
+    <string name="competitions">المسابقات</string>
+    <string name="pitch_booking">حجز الملاعب</string>
+    <string name="error">Error</string>
+    <string name="no_team_selected">اختر فريق</string>
+    <string name="no_championship_selected">اختر البطولة</string>
+    <string name="no_match_status_selected">اختر حالة المباراة</string>
+    <string name="world_cup">كأس العالم</string>
+    <string name="uefa">UEFA</string>
+    <string name="live_now">مباشر الان</string>
+    <string name="starting_at">لم يبدأ بعد</string>
+    <string name="ended">انتهي</string>
+    <string name="dateNtime">الوقت و التاريخ</string>
+    <string name="dateNtime_not_set">الوقت و التاريخ (غير محدد)</string>
+    <string name="you_didnt_set_a_time_for_the_match">عذراً, انت لم تحدد وقت المباراة</string>
+    <string name="you_didnt_select_team_a">عذراً, انت لم تختار الفريق الاول</string>
+    <string name="you_didnt_select_team_b">عذراً, انت لم تختار الفريق الثاني</string>
+    <string name="team_a_and_team_b_are_the_same">الفريق الاول هو نفس الفريق الثاني</string>
+    <string name="you_didnt_select_the_championship">عذراً, انت لم تختار البطولة</string>
+    <string name="make_sure_to_enter_the_score_correctly">عذراً, انت لم تحدد نتيجة/ميعاد المباراة بشكل صحيح</string>
+    <string name="_has_already_played_today">لعب في هذا التاريخ</string>
+    <string name="you_have_to_connect_to_the_internet">عذراًو انت غير متصل بالانترنت</string>
+    <string name="exit">خروج</string>
+    <string name="team">فريق</string>
+    <string name="alert">تنبيه</string>
+    <string name="today">اليوم</string>
+    <string name="add_match">ضف مباراة</string>
+    <string name="cairo_timezone">بتوقيت القاهرة</string>
+    <string name="done">تم بنجاح</string>
+    <string name="team_a">فريق أ</string>
+    <string name="team_b">فريق ب</string>
+    <string name="teama_teamb">فريق أ × فريق ب</string>
+    <string name="championships">البطولات</string>
+    <string name="match_score">نتيجة/ميعاد المباراة</string>
+    <string name="match_status">حالة المباراة</string>
+    <string name="timezone">التوقيت</string>
+    <string name="choose_dateNtime">اختر وقت المباراة</string>
+    <string name="add_the_match">ضف المباراة</string>
+    <string name="live_streama">---</string>
+    <string name="backup_live_streama">--- ---</string>
+    <string name="add_competition_info">معلومات المسابقة</string>
+    <string name="choose_using_first_party_gallery">جهازك لا يسمح ب اختيار الصور الا ببرنامج الجالاري الاساسي</string>
+    <string name="bad_internet_for_uploading_pic">الانترنت المتاح بطئ جداً</string>
+    <string name="img_will_be_uploaded">الصورة سوف ترفع خلال وقت قصير</string>
+    <string name="uploading_img">جاري رفع الصورة</string>
+    <string name="no_link_available">لا يوجد رابط</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#EEE"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/default_championship_logo"
+        android:id="@+id/championsip_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/championsip_name"
+        android:text="Championship"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="3dp"/>
+
+</LinearLayout>
